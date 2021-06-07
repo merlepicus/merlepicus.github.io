@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	var slider_button = document.querySelector('.slider-button');
 	var slider_container = document.getElementById("slider-container");
-	var content_container = document.getElementById("content-container");
 	var main_navigation = document.getElementById("main-navigation");
-  var sub_navigation = document.getElementById("subnavi");
+  	var sub_navigation = document.getElementById("subnavi");
 	var slider_inactive = false;
   
 	slider_button.onclick = function() {
-    slider_container.classList.toggle('active');
-    content_container.classList.toggle('inactive');
+		$("#slider-container").removeClass('active');
+		$("#content-container").removeClass('inactive');
+		slider_inactive = true;
 	}
   
 	window.addEventListener('scroll', function() {
@@ -25,20 +25,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	  }
 	});
 	
-	window.addEventListener("wheel", function() {
-		if (slider_inactive == false)  {
-		slider_container.classList.toggle('active');
-		content_container.classList.toggle('inactive');
-		slider_inactive = true;
-		return false;
-	  }
-	});
-  
-  });
-  
-  var scrollbar_position = function(){
-	  return window.pageYOffset | document.body.scrollTop;
-  }
+});
+
+var scrollbar_position = function(){
+  return window.pageYOffset | document.body.scrollTop;
+}
+
+$('body').on('mousewheel', function(e){
+	$("#slider-container").removeClass('active');
+	$("#content-container").removeClass('inactive');
+});
 
 
 
