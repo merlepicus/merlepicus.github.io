@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	var slider_button = document.querySelector('.slider-button');
 	var slider_container = document.getElementById("slider-container");
 	var main_navigation = document.getElementById("main-navigation");
-  	var sub_navigation = document.getElementById("subnavi");
+  var sub_navigation = document.getElementById("subnavi");
 	var slider_inactive = false;
   
 	slider_button.onclick = function() {
@@ -15,15 +15,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
 	window.addEventListener('scroll', function() {
 		position = scrollbar_position();
-	  
-	  if (position >= 150) {
-      main_navigation.classList.add('fixed');
-      sub_navigation.classList.add('top-position');
-	  } else {
-      main_navigation.classList.remove('fixed');
-      sub_navigation.classList.remove('top-position');
-	  }
-	});
+		
+		if (position >= 150) {
+		main_navigation.classList.add('fixed');
+		sub_navigation.classList.add('top-position');
+		} else {
+		main_navigation.classList.remove('fixed');
+		sub_navigation.classList.remove('top-position');
+		}
+		});
 	
 });
 
@@ -35,7 +35,6 @@ $('body').on('mousewheel', function(e){
 	$("#slider-container").removeClass('active');
 	$("#content-container").removeClass('inactive');
 });
-
 
 
 //Change pos/background/padding/add shadow on nav when scroll event happens 
