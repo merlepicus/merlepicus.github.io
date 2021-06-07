@@ -38,8 +38,19 @@
             </div>
           </div>
         </div>
+
+        <div id="slogan" class="color-light">
+          <h3>Schuhmanufaktur Formschön</h3>
+          <p>Bad Godesberg<br>
+            Eleganz von Kopf bis Fuß
+          </p>
+        </div>
+        <div id="chevron" class="color-light">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+
         <!-- Nav Desktop-->
-        <nav id="main-navigation">
+        <nav id="main-navigation" class="d-none d-sm-block">
           <img src="assets/images/logo_w.png" alt="Schuhmanufaktur Formschön" class="pt-5"/> 
           <div id="subnavi">
             <a href="#jubilaeum">Jubiläum</a>
@@ -55,7 +66,32 @@
             <a href="#stimmen">Stimmen</a>
           </div>
         </nav>
+       
+            
+
+
+      
+        <!-- Nav Mobile-->
+        <div id="mobile-nav" class="overlay d-block d-sm-none">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#jubilaeum">Jubiläum</a>
+            <a href="#chronologie">Chronologie</a>
+            <a href="#leistungen">Leistungen</a>
+            <a href="#massschuhe">Maßschuhe</a>
+            <a href="#pflegetipps">Pflegetipps</a>
+            <a href="#stimmen">Stimmen</a>
+          </div>
+          <!-- Button to close the overlay navigation -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div id="burger-icon" class="justify-content-end" onclick="openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
       </div>
+
 
       <!-- Social Media Sidebar -->
       <div class="d-none d-md-block sidebar d-flex flex-column">
@@ -387,7 +423,7 @@
                         1
                       </div>
                       <div class="slide-description color-light text-center desc-0">
-                        <h3>Die Fußvermessung</h3>
+                        <div class="slide-title">Die Fußvermessung</div>
                       </div>
                     </li>
                     <li class="splide__slide">
@@ -396,7 +432,7 @@
                         2
                       </div>
                       <div class="slide-description color-light text-center desc-1 hidden">
-                        <h3>Die Auswahl von Farbe und Form</h3>
+                        <div class="slide-title">Die Auswahl von Farbe und Form</div>
                       </div>
                     </li>
                     <li class="splide__slide">
@@ -405,7 +441,7 @@
                         3
                       </div>
                       <div class="slide-description color-light text-center desc-2 hidden">
-                        <h3>Die Entscheidung fürs Leder</h3>
+                        <div class="slide-title">Die Entscheidung fürs Leder</div>
                       </div>
                     </li>
                     <li class="splide__slide">
@@ -414,7 +450,7 @@
                         4
                       </div>
                       <div class="slide-description color-light text-center desc-3 hidden">
-                        <h3>Die Herstellung des Leistens</h3>
+                        <div class="slide-title">Die Herstellung des Leistens</div>
                       </div>
                     </li>
                     <li class="splide__slide">
@@ -423,7 +459,7 @@
                         5
                       </div>
                       <div class="slide-description color-light text-center desc-4 hidden">
-                        <h3>Die Fertigung des Schuhs – Teil I</h3>
+                        <div class="slide-title">Die Fertigung des Schuhs – Teil I</div>
                       </div>
                     </li>
                     <li class="splide__slide">
@@ -432,7 +468,7 @@
                         6
                       </div>
                       <div class="slide-description color-light text-center desc-5 hidden">
-                        <h3>Die Anprobe</h3>
+                        <div class="slide-title">Die Anprobe</div>
                       </div>
                     </li>
                     <li class="splide__slide">
@@ -441,7 +477,7 @@
                         7
                       </div>
                       <div class="slide-description color-light text-center desc-6 hidden">
-                        <h3>Die Fertigung des Schuhs Teil II</h3>
+                        <div class="slide-title">Die Fertigung des Schuhs Teil II</div>
                       </div>
                     </li>
                     <li class="splide__slide">
@@ -450,7 +486,7 @@
                         8
                       </div>
                       <div class="slide-description color-light text-center desc-7 hidden">
-                        <h3>Letzte Anpassungen und Feinarbeiten</h3>
+                        <div class="slide-title">Letzte Anpassungen und Feinarbeiten</div>
                       </div>
                     </li>
                   </ul>
@@ -714,7 +750,7 @@
             </div>
             <div class="align-self-center col-xs-9 col-lg-4 offset-lg-2 text-center color-light">
               <p>
-                Datenschutz
+                Impressum
                 Prüfling
               </p>
             </div>
@@ -724,7 +760,7 @@
     </footer>
 
     <!-- Scripte -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/splide-2.4.21/dist/js/splide.min.js"></script>
 

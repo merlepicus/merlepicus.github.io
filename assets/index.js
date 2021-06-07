@@ -18,19 +18,23 @@ $(function(){
 	$(window).scroll(function(){
 		if ($(window).scrollTop() > scroll_offset) {
 			$("#intro-container").removeClass('active');
+			$("#burger-icon").removeClass('active');
 		};
 
 		if ($(window).scrollTop() >= branding_height){
 			$('#main-navigation').addClass('fixed');
+			$('#burger-icon').addClass('fixed');
 		} else {
 			$('#main-navigation').removeClass('fixed');
+			$('#burger-icon').removeClass('fixed');
 		}
 	});
 
 	if ($(window).scrollTop() > branding_height) {
 		$('#main-navigation').addClass('fixed');
+		$('#burger-icon').addClass('fixed');
 	}
-	
+
 	// Splide Slider
 	var splide = new Splide('.splide', {
 	  focus: 'center',
@@ -52,3 +56,11 @@ $(function(){
 	});
 
 });
+
+// Mobile Navigation
+function openNav() {
+	document.getElementById("mobile-nav").style.width = "100%";
+}
+function closeNav() {
+	document.getElementById("mobile-nav").style.width = "0%";
+}
