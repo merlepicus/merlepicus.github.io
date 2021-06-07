@@ -21,15 +21,18 @@ h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 200;
   font-size: 3em;
+  letter-spacing: 2px
 }
 h3 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
+  letter-spacing: 1px
 }
 h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
   color: #FFFDF9;
+  letter-spacing: 2px
 }
 .quotes {
   font-family: ''
@@ -58,7 +61,7 @@ h4 {
 
 
 #intro-container {
-  overflow: hidden
+  overflow: hidden;
   max-height: 100vh;
 }
 
@@ -82,6 +85,7 @@ h4 {
   opacity: 0;
 }
 
+/* Main-Navi */
 #main-navigation {
   position: absolute;
   top: 0%;
@@ -91,37 +95,34 @@ h4 {
   z-index: 1011;
   margin-top: 0px;
 }
-
 #main-navigation.animated {
   transition: all .5s linear;
 }
-
 #main-navigation.fixed {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   background-color: rgb(242,237,227);
+  box-shadow: 0 0 10px 1px rgba(62,59,54,0.4);
 }
-
 #main-navigation.fixed a {
   color: black;
 }
-
 #main-navigation.fixed img {
   display: none;
 }
 
-/* Navi */
+/* Subnavi */
 #subnavi {
   background: none;
-  padding: 2em;
+  padding: 1em;
   color: #F2EDE3;
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
   z-index: 100;
   opacity: 1;
-  transition: opacity background .5s linear;
+  transition: opacity .5s linear;
 }
 #subnavi a {
   color: #F2EDE3;
@@ -133,7 +134,8 @@ h4 {
 #subnavi.top-position {
   background: #F2EDE3;
   color: #3E3B36;
-  box-shadow: 0 0 16px 1px rgba(0,0,0,0.17);}
+  box-shadow: 0 0 10px 1px rgba(62,59,54,0.4);
+}
 #subnavi.top-position a {
   color: #3E3B36;
   text-decoration: none;
@@ -207,7 +209,6 @@ h4 {
 /* Sidebar Social Media */
 .sidebar {
   position: fixed;
-  z-index: 5;
   top: 35%;
   right: 0;
 }
