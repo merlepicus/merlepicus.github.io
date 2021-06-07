@@ -267,6 +267,28 @@ img.grafik {
   align-items: center !important;
 }
 
+.voice {
+  width: 100%;
+  word-wrap: break-word;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+  .voices {
+    max-height: 705px;
+  }
+
+  .voice {
+    width: 31%;
+    word-wrap: break-word;
+  }
+}
+
+@media (min-width: 1200px) {
+  .voices {
+    max-height: 625px;
+  }
+}
 
 /*Footer*/
 @media (min-width: 768px) {
