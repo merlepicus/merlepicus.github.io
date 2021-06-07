@@ -1,71 +1,54 @@
-//Header
-document.addEventListener("DOMContentLoaded", function(event) { 
-
-	var slider_button = document.querySelector('.slider-button');
-	var slider_container = document.getElementById("slider-container");
-	var main_navigation = document.getElementById("main-navigation");
-  var sub_navigation = document.getElementById("subnavi");
-	var slider_inactive = false;
-  
-	slider_button.onclick = function() {
-		$("#slider-container").removeClass('active');
-		$("#content-container").removeClass('inactive');
-		slider_inactive = true;
-	}
-  
-	window.addEventListener('scroll', function() {
-		position = scrollbar_position();
-		
-		if (position >= 150) {
-		main_navigation.classList.add('fixed');
-		sub_navigation.classList.add('top-position');
-		} else {
-		main_navigation.classList.remove('fixed');
-		sub_navigation.classList.remove('top-position');
-		}
-		});
-	
-});
-
-var scrollbar_position = function(){
-  return window.pageYOffset | document.body.scrollTop;
-}
-
-$('body').on('mousewheel', function(e){
-	$("#slider-container").removeClass('active');
-	$("#content-container").removeClass('inactive');
-});
+var branding_height = 253;
+var scroll_offset = 10;
 
 
 //Change pos/background/padding/add shadow on nav when scroll event happens 
 $(function(){
-	var navbar = $('.navbar');
-	
+
+	// Add animation after domready to prevent jumping branding
+	$("#main-navigation").addClass("animated");
+
+	// Remove animation and active class on intro-container when document is already scrolled
+	if ($(window).scrollTop() > scroll_offset) {
+		$("#intro-container").removeClass('active');
+		$("#main-navigation").removeClass("animated");
+	}
+
+	// Toogle navigation and intro classes on scroll
 	$(window).scroll(function(){
-		if($(window).scrollTop() <= 40){
-			navbar.removeClass('navbar-scroll');
+		if ($(window).scrollTop() > scroll_offset) {
+			$("#intro-container").removeClass('active');
+		};
+
+		if ($(window).scrollTop() >= branding_height){
+			$('#main-navigation').addClass('fixed');
 		} else {
-			navbar.addClass('navbar-scroll');
+			$('#main-navigation').removeClass('fixed');
 		}
 	});
-});
 
-// Splide Slider
-var splide = new Splide('.splide', {
-  focus: 'center',
-  type: 'loop',
-  perPage: 3,
-  gap: '1rem',
-  height: '18rem',
-	cover: true,
-  breakpoints: {
-		'767': {
-			perPage: 1,
-		},
+	if ($(window).scrollTop() > branding_height) {
+		$('#main-navigation').addClass('fixed');
 	}
-}).mount();
+	
+	// Splide Slider
+	var splide = new Splide('.splide', {
+	  focus: 'center',
+	  type: 'loop',
+	  perPage: 3,
+	  gap: '1rem',
+	  height: '18rem',
+		cover: true,
+	  breakpoints: {
+			'767': {
+				perPage: 1,
+			},
+		}
+	}).mount();
 
-splide.on('move', function(newIndex, oldIndex, destIndex) {
-  $('.splide__list').find(".slide-description").addClass("hidden");
-  $('.splide__slide').find('.desc-' + newIndex).removeClass("hidden");
+	splide.on('move', function(newIndex, oldIndex, destIndex) {
+	  $('.splide__list').find(".slide-description").addClass("hidden");
+	  $('.splide__slide').find('.desc-' + newIndex).removeClass("hidden");
+	});
+
 });
