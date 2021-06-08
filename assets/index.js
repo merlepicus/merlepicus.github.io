@@ -20,11 +20,11 @@ $(function(){
 		if ($(window).scrollTop() > scroll_offset) {
 			$("#intro-container").removeClass('active');
 			$("#burger-icon").removeClass('active');
+			$('#slogan').addClass('fixed');
 		};
 
 		if ($(window).scrollTop() >= branding_height){
 			$('#main-navigation').addClass('fixed');
-			$('#slogan').addClass('fixed');
 			$('#burger-icon').addClass('fixed');
 		} else {
 			$('#main-navigation').removeClass('fixed');
