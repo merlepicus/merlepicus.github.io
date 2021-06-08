@@ -1,4 +1,5 @@
 /* Fonts */
+
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -6,6 +7,7 @@
   font-display: swap;
   src: url('fonts/Raleway/Raleway.ttf') format('ttf');
 }
+
 @font-face {
   font-family: 'Playfair Display';
   font-style: normal;
@@ -17,17 +19,20 @@ p {
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
 }
+
 h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 200;
   font-size: 3em;
   letter-spacing: 2px
 }
+
 h3 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
   letter-spacing: 1px
 }
+
 @media (max-width: 575px) {
   h3 {
     font-family: 'Raleway', sans-serif;
@@ -35,19 +40,119 @@ h3 {
     letter-spacing: 1px
   }
 }
+
 h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
   color: #FFFDF9;
   letter-spacing: 2px
 }
+
+/* Utility Classes */
+
 .text-raleway {
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
 }
+
 .quotes {
   font-family: ''
 }
+
+.z-1 {
+  z-index: 3;
+}
+
+.z-2 {
+  z-index: 5;
+}
+
+.color-dark {
+  color: #272F30;
+}
+
+.color-light {
+  color: #FFFDF9;
+}
+
+.color-red {
+  color: #7D3927;
+}
+
+/* Background */
+
+.bg-darkbeige {
+  background: #F2EDE3;
+}
+
+.bg-lightbeige {
+  background: #FFFDF9;
+}
+
+.bg-brown {
+  background: #3E3B36;
+}
+
+.bg-darkbrown {
+  background: #262220;
+}
+
+.transparent-chronology {
+  border-top: 3rem solid #A76751; 
+  background: linear-gradient(rgba(129,76,57,0.7), rgba(129,76,57,0.7)), url('images/chronology.jpg');
+}
+
+.transparent-performance {
+  border-top: 3rem solid #3E3B36; 
+  background: linear-gradient(rgba(62,59,54,0.65), rgba(62,59,54,0.65)), url('images/performance.jpg');
+}
+
+.transparent-customshoes {
+  border-top: 3rem solid #A76751; 
+  background: linear-gradient(rgba(129,76,57,0.7), rgba(129,76,57,0.7)), url('images/customshoes.jpg');
+}
+
+.transparent-caretips {
+  border-top: 3rem solid #3E3B36; 
+  background: linear-gradient(rgba(62,59,54,0.65), rgba(62,59,54,0.65)), url('images/caretips.jpg');
+}
+
+.transparent-voices {
+  min-height: 300px;
+  border-top: 3rem solid #A76751; 
+  background: linear-gradient(rgba(129,76,57,0.7), rgba(129,76,57,0.7));
+}
+
+.bg-voices {
+  background: url('images/voices.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-transparent-light {
+  background: linear-gradient(rgba(255,253,249,0.85), rgba(255,253,249,0.85));
+}
+
+.bg-transparent-red {
+  background: linear-gradient(rgba(129,76,57,0.7), rgba(129,76,57,0.7));
+}
+
+.bg-transparent-brown {
+  background: linear-gradient(rgba(62,59,54,0.65), rgba(62,59,54,0.65));
+}
+
+.parallax {
+  min-height: 300px;
+  /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Main Classes */
 
 .main-logo { 
   height: 250px;
@@ -61,23 +166,7 @@ h4 {
 .carousel-item img {
   height: 100vh;
   object-fit: cover;
-} 
-.z-1 {
-  z-index: 3;
 }
-.z-2 {
-  z-index: 5;
-}
-.color-dark {
-  color: #272F30;
-}
-.color-light {
-  color: #FFFDF9;
-}
-.color-red {
-  color: #7D3927;
-}
-
 
 #intro-container {
   overflow: hidden;
@@ -107,9 +196,11 @@ h4 {
 #slogan {
   z-index: 1011;
 }
+
 #slogan.animated {
   transition: all .5s linear;
 }
+
 #slogan.fixed {
   position: absolute;
   text-align: center;
@@ -117,6 +208,7 @@ h4 {
   right: 0;
   top: 84vh;
 }
+
 #chevron {
   z-index: 1011;
   position: absolute;
@@ -127,7 +219,8 @@ h4 {
   font-size: 2em;
 }
 
-/* Main-Navi */
+/* Main Navigation */
+
 #main-navigation {
   position: absolute;
   top: 0%;
@@ -137,9 +230,11 @@ h4 {
   z-index: 1011;
   margin-top: 0px;
 }
+
 #main-navigation.animated {
   transition: all .5s linear;
 }
+
 #main-navigation.fixed {
   color: #3E3B36;
   position: fixed;
@@ -149,17 +244,21 @@ h4 {
   background-color: rgb(242,237,227);
   box-shadow: 0 0 10px 1px rgba(62,59,54,0.4);
 }
+
 #main-navigation.fixed a {
   color: #272F30;
 }
+
 #main-navigation.fixed a:hover {
   color: #7D3927;
 }
+
 #main-navigation.fixed img {
   display: none;
 }
 
 /* Subnavi */
+
 #subnavi {
   background: none;
   padding: 1em;
@@ -170,15 +269,18 @@ h4 {
   opacity: 1;
   transition: opacity .5s linear;
 }
+
 #subnavi a {
   color: #F2EDE3;
   text-decoration: none;
 }
+
 #subnavi a:hover {
   color: #ffffff;
 }
 
 /* Mobile-Navi */
+
 .overlay {
   height: 100%;
   width: 0;
@@ -186,23 +288,27 @@ h4 {
   z-index: 1050;
   right: 0;
   top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
 }
+
 .overlay-content {
   position: relative;
   width: 100%;
   text-align: center;
   margin-top: 30px;
 }
+
 .overlay-menu {
   padding-top: 2rem;
 }
+
 .overlay-menu a {
   display: block;
 }
+
 .overlay a {
   padding: 3.5px;
   text-decoration: none;
@@ -211,25 +317,29 @@ h4 {
   color: #ffffff;
   transition: 0.3s;
 }
+
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
 }
+
 .overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
 }
+
 .burgermenu-logo {
   height: auto;
   max-width: 20%;
 }
+
 .burger-social {
   margin-top: 2rem;
 }
 
+/* Burger-Menu */
 
-/* Style Burger-Menu */
 #burger-icon {
   top: 10px;
   right: 45px;
@@ -237,6 +347,7 @@ h4 {
   cursor: pointer;
   position: absolute;
 }
+
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -244,6 +355,7 @@ h4 {
   margin: 6px 0;
   transition: 0.4s;
 }
+
 .bar2 {
   width: 25px;
   height: 5px;
@@ -252,10 +364,12 @@ h4 {
   margin: 6px 0;
   transition: 0.4s;
 }
+
 .change .bar2 {
   -webkit-transform: translate(-8px, -8px);
   transform: translate(-8px, -8px);
 }
+
 #burger-icon.fixed {
   position: fixed;
   top: 0%;
@@ -265,73 +379,14 @@ h4 {
   box-shadow: 0 0 10px 1px rgba(62,59,54,0.4);
 }
 
-
-/* Background */
-.bg-darkbeige {
-  background: #F2EDE3;
-}
-.bg-lightbeige {
-  background: #FFFDF9;
-}
-.bg-brown {
-  background: #3E3B36;
-}
-.bg-darkbrown {
-  background: #262220;
-}
-.transparent-chronology {
-  border-top: 3rem solid #A76751; 
-  background: linear-gradient(rgba(129,76,57,0.7), rgba(129,76,57,0.7)), url('images/chronology.jpg');
-}
-.transparent-performance {
-  border-top: 3rem solid #3E3B36; 
-  background: linear-gradient(rgba(62,59,54,0.65), rgba(62,59,54,0.65)), url('images/performance.jpg');
-}
-.transparent-customshoes {
-  border-top: 3rem solid #A76751; 
-  background: linear-gradient(rgba(129,76,57,0.7), rgba(129,76,57,0.7)), url('images/customshoes.jpg');
-}
-.transparent-caretips {
-  border-top: 3rem solid #3E3B36; 
-  background: linear-gradient(rgba(62,59,54,0.65), rgba(62,59,54,0.65)), url('images/caretips.jpg');
-}
-.transparent-voices {
-  min-height: 300px;
-  border-top: 3rem solid #A76751; 
-  background: linear-gradient(rgba(129,76,57,0.7), rgba(129,76,57,0.7));
-}
-.bg-voices {
-  background: url('images/voices.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bg-transparent-light {
-  background: linear-gradient(rgba(255,253,249,0.85), rgba(255,253,249,0.85));
-}
-.bg-transparent-red {
-  background: linear-gradient(rgba(129,76,57,0.7), rgba(129,76,57,0.7));
-}
-.bg-transparent-brown {
-  background: linear-gradient(rgba(62,59,54,0.65), rgba(62,59,54,0.65));
-}
-
-.parallax {
-  min-height: 300px;
-  /* parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
- }
-
 /* Sidebar Social Media */
+
 .sidebar {
   position: fixed;
   top: 35%;
   right: 0;
 }
+
 .item {
   margin: 1px 0 2px;
   width: 4rem;
@@ -341,20 +396,21 @@ h4 {
   display: flex;
   box-shadow: 0 0 6px 0 rgba(0,0,0,0.12);
 }
+
 .social-icon {
   color:#A76751;
   font-size: 1.5rem;
 }
+
 .social-icon:hover {
   color: #3E3B36;
 }
-
-
 
 .button-red {
   background-color: #7D3927;
   color:#FFFDF9
 }
+
 .button-red:hover{
   background-color: #A76751;
   color:#FFFDF9
@@ -364,21 +420,25 @@ img.siegel {
   max-width: 30%;
   height: auto;
 }
+
 @media (max-width: 576px) {
   img.siegel {
     max-width: 80%;
     height: auto;
   }
 }
+
 img.grafik {
   max-width: 7rem;
   height: auto;
 }
 
 /* Slider Customshoes */
+
 .slide-description {
   background: linear-gradient(rgba(129,76,57,0.8), rgba(129,76,57,0.8));
 }
+
 .slide-title {
   padding: 5px;
   font-family: 'Raleway', sans-serif;
@@ -438,6 +498,7 @@ img.grafik {
     height: auto;
   }
 }
+
 @media (max-width: 767px) {
   .footerlogo {
     margin-top: -3em;
@@ -445,18 +506,22 @@ img.grafik {
     height: auto;
   }
 }
+
 .link-footer {
   font-family: 'Raleway', sans-serif;
   color:#B5AC9E;
   text-decoration: none;
   box-shadow: none;
 }
+
 .link-footer:hover {
   color:#C48B77;
 }
+
 .link-footer:focus {
   box-shadow: none;
 }
+
 .button-close {
   background-color: #B5AC9E;
   color: #ffffff;
@@ -464,6 +529,7 @@ img.grafik {
   font-size: 0.8em;
   font-family: 'Raleway', sans-serif;
 }
+
 .button-close:hover {
   background-color: #A29A8E;
   color: #ffffff;
