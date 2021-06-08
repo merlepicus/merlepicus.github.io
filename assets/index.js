@@ -20,7 +20,6 @@ $(function(){
 		if ($(window).scrollTop() > scroll_offset) {
 			$("#intro-container").removeClass('active');
 			$("#burger-icon").removeClass('active');
-			$('#main-logo').removeClass('main-logo');
 			$('#slogan').addClass('fixed');
 
 		};
@@ -31,7 +30,6 @@ $(function(){
 		} else {
 			$('#main-navigation').removeClass('fixed');
 			$('#burger-icon').removeClass('fixed');
-			$('#main-logo').addClass('main-logo-smaller');
 
 		}
 	});
@@ -44,7 +42,6 @@ $(function(){
 	$("#chevron").on("click", function(){
 		$("#intro-container").removeClass('active');
 		$("#burger-icon").removeClass('active');
-		$('#main-logo').removeClass('main-logo');
 		$('#slogan').addClass('fixed');
 	});
 

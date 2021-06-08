@@ -28,6 +28,13 @@ h3 {
   font-size: 1.5em;
   letter-spacing: 1px
 }
+@media (max-width: 575px) {
+  h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 1px
+  }
+}
 h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
@@ -42,14 +49,14 @@ h4 {
   font-family: ''
 }
 
-.main-logo {
-  height: 20rem;
+.main-logo { 
+  height: 250px;
   width: auto;
 }
-.main-logo-smaller {
-  height: 200px;
-  width: auto;
+#intro-container.active .main-logo {
+  height: 500px
 }
+
 .carousel-item img {
   height: 100vh;
   object-fit: cover;
