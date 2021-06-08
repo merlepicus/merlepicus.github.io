@@ -67,9 +67,15 @@ $(function(){
 });
 
 // Mobile Navigation
-function openNav() {
-	document.getElementById("mobile-nav").style.width = "100%";
+function toggleNav() {
+	if (document.getElementById("mobile-nav").style.width == "100%") {
+		document.getElementById("mobile-nav").style.width = "0%";
+	} else {
+		document.getElementById("mobile-nav").style.width = "100%";
+	}
+	
 }
+
 function closeNav() {
 	document.getElementById("mobile-nav").style.width = "0%";
 }
