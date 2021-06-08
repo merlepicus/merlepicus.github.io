@@ -170,14 +170,6 @@ h4 {
 #subnavi.top-position a:hover {
   color: #7D3927;
 }
-/* Navigation Change on scroll */
-.active {
-  border-bottom: 2px solid #ecf0f1;
-}
-
-
-
-
 
 /* Mobile-Navi */
 .overlay {
