@@ -55,7 +55,7 @@ h4 {
 }
 
 #intro-container.active .main-logo {
-  height: 500px
+  height: 25rem;
 }
 
 .carousel-item img {

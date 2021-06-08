@@ -72,5 +72,5 @@ function toggleNav() {
 		document.getElementById("mobile-nav").style.width = "0%";
 	} else {
 		document.getElementById("mobile-nav").style.width = "100%";
-	}
+	}	
 }
