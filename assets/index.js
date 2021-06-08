@@ -22,6 +22,7 @@ $(function(){
 			$("#burger-icon").removeClass('active');
 			$('#main-logo').removeClass('main-logo');
 			$('#slogan').addClass('fixed');
+
 		};
 
 		if ($(window).scrollTop() >= branding_height){
