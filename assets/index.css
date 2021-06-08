@@ -43,7 +43,12 @@ h4 {
 }
 
 .main-logo {
-  height: 400px;
+  height: 20rem;
+  width: auto;
+}
+.main-logo-smaller {
+  height: 200px;
+  width: auto;
 }
 .carousel-item img {
   height: 100vh;
@@ -128,6 +133,7 @@ h4 {
   transition: all .5s linear;
 }
 #main-navigation.fixed {
+  color: #3E3B36;
   position: fixed;
   top: 0;
   right: 0;
@@ -137,6 +143,9 @@ h4 {
 }
 #main-navigation.fixed a {
   color: #272F30;
+}
+#main-navigation.fixed a:hover {
+  color: #7D3927;
 }
 #main-navigation.fixed img {
   display: none;
@@ -158,19 +167,7 @@ h4 {
   text-decoration: none;
 }
 #subnavi a:hover {
-  color: #A76751;
-}
-#subnavi.top-position {
-  background: #F2EDE3;
-  color: #3E3B36;
-  box-shadow: 0 0 10px 1px rgba(62,59,54,0.4);
-}
-#subnavi.top-position a {
-  color: #3E3B36;
-  text-decoration: none;
-}
-#subnavi.top-position a:hover {
-  color: #7D3927;
+  color: #ffffff;
 }
 
 /* Mobile-Navi */
