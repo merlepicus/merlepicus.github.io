@@ -40,6 +40,13 @@ $(function(){
 		$('#burger-icon').addClass('fixed');
 	}
 
+	$("#chevron").on("click", function(){
+		$("#intro-container").removeClass('active');
+		$("#burger-icon").removeClass('active');
+		$('#main-logo').removeClass('main-logo');
+		$('#slogan').addClass('fixed');
+	});
+
 	// Splide Slider
 	var splide = new Splide('.splide', {
 	  focus: 'center',
