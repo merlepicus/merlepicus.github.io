@@ -8,6 +8,7 @@ $(function(){
 	// Add animation after domready to prevent jumping branding
 	$("#main-navigation").addClass("animated");
 
+
 	// Remove animation and active class on intro-container when document is already scrolled
 	if ($(window).scrollTop() > scroll_offset) {
 		$("#intro-container").removeClass('active');
@@ -23,6 +24,7 @@ $(function(){
 
 		if ($(window).scrollTop() >= branding_height){
 			$('#main-navigation').addClass('fixed');
+			$('#slogan').addClass('fixed');
 			$('#burger-icon').addClass('fixed');
 		} else {
 			$('#main-navigation').removeClass('fixed');

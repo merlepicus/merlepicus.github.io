@@ -66,21 +66,29 @@
             <a href="#stimmen">Stimmen</a>
           </div>
         </nav>
-       
-            
-
-
-      
         <!-- Nav Mobile-->
         <div id="mobile-nav" class="overlay d-block d-sm-none">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
-            <a href="#jubilaeum">Jubiläum</a>
-            <a href="#chronologie">Chronologie</a>
-            <a href="#leistungen">Leistungen</a>
-            <a href="#massschuhe">Maßschuhe</a>
-            <a href="#pflegetipps">Pflegetipps</a>
-            <a href="#stimmen">Stimmen</a>
+            <img src="assets/images/logo_w.png" alt="Schuhmanufaktur Formschön" class="burgermenu-logo"/> 
+            <div class="overlay-menu color-light">
+              <a href="#jubilaeum">Jubiläum</a>
+              <a href="#chronologie">Chronologie</a>
+              <a href="#leistungen">Leistungen</a>
+              <a href="#massschuhe">Maßschuhe</a>
+              <a href="#pflegetipps">Pflegetipps</a>
+              <a href="#stimmen">Stimmen</a>
+              – – – – – – – – – – – –
+              <a href="#oeffnungszeiten">Öffnungszeiten</a>
+              <a href="#kontakt">Kontakt</a>
+              <a href="#impressum">Impressum</a>
+            </div>
+            <div class="color-light burger-social">
+              <a href="https://www.snapchat.com/l/de-de/"><i class="fab fa-snapchat-ghost"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+              <a href="https://de-de.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
           </div>
           <!-- Button to close the overlay navigation -->
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -91,8 +99,6 @@
           </div>
         </div>
       </div>
-
-
       <!-- Social Media Sidebar -->
       <div class="d-none d-md-block sidebar d-flex flex-column">
         <div class="item text-center color-dark bg-light">
@@ -126,7 +132,7 @@
               <h3 class="color-dark">Immer einen Schritt voraus. Feiern Sie mit uns!</h3>
             </div>
           </div>
-          <div class="row pt-4">
+          <div class="row pt-4 pb-4">
             <div class="d-flex justify-content-center">
               <img class="siegel" src="assets/images/20_2.png"/>
             </div>
@@ -170,7 +176,7 @@
         </div>
         <div class="container">
           <div class="main-timeline">
-            <div class="timeline">
+            <div class="timeline pt-5">
               <div class="icon"></div>
               <div class="date-content">
                 <div class="date-outer">
@@ -719,25 +725,50 @@
               <h2>
                 Kontakt
               </h2>
-              <p>
-                <b>Schuhmanufaktur Formschön GmbH</b><br>
-                <i class="fas fa-map-marked"></i>
-                Alte Bahnhofstraße 5a<br>
-                53173 Bonn-Bad Godesberg
-              </p>
-              <p>
-                <i class="fas fa-phone-alt"></i>
-                Tel: 0228-123450<br>
-                <i class="fas fa-fax"></i>
-                Fax: 0228-123459
-              </p>
-              <p>
-                <i class="fas fa-envelope-open-text"></i>
-                info@schuhmanufaktur-formschön.de<br>
-                <i class="fas fa-wifi"></i>
-                www.schuhmanufaktur-formschön.de
-              </p>
-              </p>
+              <div class="text-raleway">
+                <b>Schuhmanufaktur Formschön GmbH</b>
+              </div>
+              <div class="row">
+                <div class="col-1 pr-n1">
+                  <i class="fas fa-map-marked"></i>
+                </div>
+                <div class="col-11 text-raleway mb-3">
+                  Alte Bahnhofstraße 5a<br>
+                  53173 Bonn-Bad Godesberg
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="col-11 text-raleway">
+                  Tel: 0228-123450
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <i class="fas fa-fax"></i>
+                </div>
+                <div class="col-11 mb-3">
+                  Fax: 0228-123459
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <div class="col-11">
+                  info@schuhmanufaktur-formschön.de<br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <i class="fas fa-wifi"></i>
+                </div>
+                <div class="col-11">
+                  www.schuhmanufaktur-formschön.de
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -749,10 +780,91 @@
               <img class="img-fluid pt-sm-4 footerlogo" src="assets/images/logo_w.png">
             </div>
             <div class="align-self-center col-xs-9 col-lg-4 offset-lg-2 text-center color-light">
-              <p>
+              <button class="btn btn-link link-footer" data-bs-toggle="modal" data-bs-target="#impressumModal">
                 Impressum
+              </button>
+              <div class="modal fade" id="impressumModal" tabindex="-1" aria-labelledby="impressumModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title color-red" id="impressumModalLabel">
+                        Impressum
+                      </h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body color-dark text-raleway text-start">
+                      <div class="pb-3">
+                        <b>Schuhmanufaktur Formschön GmbH</b><br>
+                        Geschäftsführung: Maria Gracia und Paolo Zuretti
+                      </div>
+                      <div class="pb-3">
+                        Alte Bahnhofstraße 5a<br>
+                        53173 Bonn-Bad Godesberg
+                      </div>
+                      <div class="pb-3">
+                        Tel: 0228-123450, Fax: 0228-123459
+                      </div>
+                      <div class="pb-3">
+                        info@schuhmanufaktur-formschön.de<br>
+                        www.schuhmanufaktur-formschön.de
+                      </div>
+                      <div>
+                        Amtsgericht Bonn, Handelsregister Nr. XXX000XXX<br>
+                        Finanzamt Bonn-Außenstadt, USt.ID: DE10111011
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn button-close" data-bs-dismiss="modal">Schließen</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-link link-footer" data-bs-toggle="modal" data-bs-target="#prueflingModal">
                 Prüfling
-              </p>
+              </button>
+              <div class="modal fade" id="prueflingModal" tabindex="-1" aria-labelledby="prueflingModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title color-red" id="prueflingModalLabel">
+                        Prüfling
+                      </h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body color-dark text-start">
+                      <div class="row d-flex align-items-center text-raleway">
+                        <div class="col-6">
+                          <div class="pb-2">
+                            <b>Prüfling:</b><br>
+                            Merle Specht
+                          </div>
+                          <div class="pb-2">
+                            <b>Prüflingsnummer:</b><br>
+                            Merle Specht
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="pb-2">
+                            Abschlussprüfung 2021
+                          </div>
+                          <div class="pb-2">
+                            Mediengestalterin<br>
+                            Digital und Print
+                          </div>
+                          <div>
+                            Fachrichtung:<br>
+                            Gestaltung und Technik
+                          </div>
+                        </div>
+                      </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn button-close" data-bs-dismiss="modal">Schließen</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
