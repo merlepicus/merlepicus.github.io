@@ -29,7 +29,6 @@ $(function(){
 			$('#burger-icon').addClass('fixed');
 		} else {
 			$('#main-navigation').removeClass('fixed');
-			$('#burger-icon').removeClass('fixed');
 
 		}
 	});
