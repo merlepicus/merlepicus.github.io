@@ -20,6 +20,7 @@ $(function(){
 		if ($(window).scrollTop() > scroll_offset) {
 			$("#intro-container").removeClass('active');
 			$("#burger-icon").removeClass('active');
+			$('#main-logo').removeClass('main-logo');
 			$('#slogan').addClass('fixed');
 		};
 
